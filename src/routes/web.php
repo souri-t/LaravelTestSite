@@ -17,5 +17,7 @@ Route::get('/', function () {
 
 Route::resource('book', 'BookController');
 
-
 // Route::get('book/{id}/edit', 'BookController@edit');
+
+Route::resource('utility', 'UtilityController');
+Route::post('utility/trim', 'UtilityController@trim');
